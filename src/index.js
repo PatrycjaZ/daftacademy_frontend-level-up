@@ -1,4 +1,4 @@
 import script from './script';
-import './styles/style.sass';
+import style from './sass/main.scss';
 
 script();
