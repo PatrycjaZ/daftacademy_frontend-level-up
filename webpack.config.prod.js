@@ -8,6 +8,7 @@ module.exports = {
         filename: 'main.js',
         path: distDir
     },
+    mode: 'development',
     module: {
         rules: [
             {
@@ -21,11 +22,19 @@ module.exports = {
                 }
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.sass$/,
                 use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader'
+                ]
+            },
+            {
+                test: /\.png$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
                 ]
             }
         ]
