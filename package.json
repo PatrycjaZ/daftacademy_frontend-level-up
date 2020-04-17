@@ -2,10 +2,11 @@
   "name": "frontend-level-up",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrycja Zamkowska",
   "license": "ISC",
@@ -28,6 +29,6 @@
     "webpack-dev-server": "^3.10.3"
   },
   "browserslist": [
-    "> 0.25%, not dead"
+    "defaults"
   ]
 }
