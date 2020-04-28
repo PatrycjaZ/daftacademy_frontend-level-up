@@ -1,0 +1,20 @@
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(180deg);
+    transition: all .4s;
+  }
+  
+  .active {
+    opacity: 1;
+    pointer-events: auto;
+  }

@@ -61,58 +61,51 @@
     </header>
 
     <main class="page-content">
-        <section id="carousel" class="content-section">
-            <div class="container-fluid slider">
-                <div class="row justify-content-center mx-0 p-5">
-                    <div class="col-9">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row justify-content-center">
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                        <div class="col-auto px-1">
-                                            <img src="https://placekitten.com/g/268/338" alt="Product">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                        </div>
+        <a href="#" class="to-top">
+            <img src="./assets/-e-kz-angle-down@3x.svg" alt="toTopButton">
+        </a>
+        <section class="slider">
+            <div class="container-carousel">
+                <button class="carousel-button carousel-button--prev">
+                </button>
+                <div class="wrapper">
+                  <div class="inner">
+                    <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
                     </div>
+                    <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                    </div>
+                    <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                     </div>
+                     <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                    </div>
+                    <div class="card">
+                        <img class="img-carousel" src="https://placekitten.com/g/268/338" alt="Product">
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+                <button class="carousel-button carousel-button--next">
+                </button>
+            </div> 
+        </section>    
 
         <section id="first-gallery" class="content-section">
             <h2 class="text-center">New Arrivals</h2>
@@ -139,7 +132,7 @@
                         <p>Price</p>
                     </div>
                 </div>
-                <div class="row mx-0 justify-content-center">
+                <div class="row mx-0 justify-content-center row-gallery">
                     <div class="col-6 col-md-auto px-1 px-md-3">
                         <img src="https://placekitten.com/g/309/390" alt="product">
                         <h3>Product</h3>
@@ -161,9 +154,9 @@
                         <p>Price</p>
                     </div>
                 </div>
-                <div class="row text-center">
+                <div class="row text-center button-container">
                     <div class="col-12 p-5">
-                        <button>All products</button>
+                        <button class="button--all-products button">All products</button>
                     </div>
                 </div>
             </div>
@@ -213,7 +206,7 @@
 
         <section class="additional-info">
             <div class="container">
-               Info
+                ©<span class="date-year"></span> Zonex All rights reserved
             </div>
         </section>
     </footer>

@@ -1,7 +1,13 @@
+/* import base styles */
 @import 'base/reset';
 @import 'base/typography';
 
+/* import layout styles */
 @import 'layout/header';
-@import 'layout/slider';
 
+/* import components styles */
 @import 'components/formfield';
+@import 'components/scroll-to-top';
+@import 'components/carousel';
+
+/* import variables styles */
