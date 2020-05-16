@@ -1,8 +1,8 @@
-const buttonAllProducts = document.querySelector('.button--all-products');
-const cnt = document.querySelector('.button-container');
+const buttonAllProducts = document.querySelector('.first-gallery__button--all');
+const cnt = document.querySelector('.first-gallery__button-container');
 
 buttonAllProducts.addEventListener('click', (e) => {
-    const divPhotos = document.querySelector(".row-gallery");
+    const divPhotos = document.querySelector(".first-gallery__row-lg");
     const newDiv = divPhotos.cloneNode(true);
     cnt.before(newDiv);
 });

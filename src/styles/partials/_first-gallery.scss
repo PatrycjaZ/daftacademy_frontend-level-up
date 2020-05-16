@@ -1,0 +1,63 @@
+@import "partials/variables";
+
+.first-gallery {
+    &__title {
+        padding: 2em 0;
+        font-size: 48px;
+        color: $black-main;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width: $lg) {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    &__container {
+        width: 85%;
+        margin: 0 auto;
+        @media (max-width: $lg) {
+            width: 90%;
+        }
+    }
+    &__card {
+        position: relative;
+        @media (max-width: $lg) {
+            margin-bottom: 45px;
+        }
+    }
+    &__name {
+        font-size: 13px;
+        font-weight: 500;
+        padding-top: 11px;
+        color: $grey-desc;
+    }
+    &__price {
+        font-size: 13px;
+        font-weight: bold;
+        color: $black-main;
+        padding-top: 11px;
+        padding-bottom: 40px;
+        @media (max-width: $lg) {
+            padding-bottom: 0px;
+        }
+    }
+    &__button {
+        font-size: 13px;
+        border: 2px solid $black-main;
+        background-color: transparent;
+        color: $black-main;
+        padding: 18px 33px;
+        margin: auto;
+        transition: 0.5s;
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            background-color: $button-hover-color;
+        }
+    }
+    &__button-container {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+}

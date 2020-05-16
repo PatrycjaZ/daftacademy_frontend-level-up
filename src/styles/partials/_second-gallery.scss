@@ -1,0 +1,89 @@
+@import "partials/variables";
+
+.second-gallery {
+    &__container {
+        @media (max-width: $lg) {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 95%;
+        }
+    }
+    &__container--inside {
+        @media (max-width: $lg) {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+    &__card {
+        position: relative;
+        @media (max-width: $lg) {
+            justify-content: center;
+            margin: 0 auto;
+            padding: 10px;
+            width: 100%;
+        }
+        &--transition {
+            transition: 0.3s;
+        }
+        &__image {
+            margin: 0;
+            padding: 0;
+            @media (max-width: $lg) {
+                display: block;
+                margin: 0;
+                width: 100%;
+            }
+        }
+        &__desc {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            z-index: 10;
+        }
+        &__name {
+            font-weight: 500;
+            font-size: 24px;
+            color: $grey-desc;
+        }
+        &__link {
+            font-weight: bold;
+            color: $black-main;
+            font-size: 13px;
+        }
+        &__overlay {
+            position: absolute;
+            z-index: 5;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            &--1 {
+                width: 547px;
+                height: 630px;
+            }
+            &--2 {
+                width: 380px;
+                height: 310px;
+            }
+            &--3 {
+                width: 769px;
+                height: 310px;
+            }
+            @media (max-width: $lg) {
+                display: none;
+            }
+        }
+        &:hover .second-gallery__card__name {
+            color: $white;
+        }
+        &:hover .second-gallery__card__link {
+            color: $white;
+        }
+        &:hover .second-gallery__card__overlay {
+            background-color: $black-main;
+            opacity: 0.6;
+        }
+    }
+}

@@ -1,13 +1,8 @@
-/* import base styles */
-@import 'base/reset';
-@import 'base/typography';
-
-/* import layout styles */
-@import 'layout/header';
-
-/* import components styles */
-@import 'components/formfield';
-@import 'components/scroll-to-top';
-@import 'components/carousel';
-
-/* import variables styles */
+@import "partials/general";
+@import "partials/header";
+@import "partials/first-gallery";
+@import "partials/second-gallery";
+@import "partials/footer";
+@import "partials/formfield";
+@import "partials/scroll-to-top";
+@import "partials/carousel";
