@@ -28,6 +28,11 @@
     grid-auto-flow: column;
     margin: auto;
   }
+  &__image {
+    position: relative;
+    width: 268px;
+    height: 338px;
+  }
   &__item {
     position: relative;
     width: 268px;
